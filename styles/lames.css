@@ -37,3 +37,19 @@
 .vitalite-tenacite .case.crossed {
   background: url("../assets/cross.svg") center/contain no-repeat;
 }
+
+.vitalite-controls {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.vitalite-controls button {
+  padding: 4px 10px;
+  border: 1px solid #333;
+  background: #f0f0f0;
+  cursor: pointer;
+  border-radius: 4px;
+}
+

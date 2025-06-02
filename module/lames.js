@@ -42,9 +42,20 @@ class LamesCharacterSheet extends ActorSheet {
     return context;
   }
 
+  sendChatMessage(content) {
+    ChatMessage.create({
+      user: game.user.id,
+      speaker: ChatMessage.getSpeaker({ actor: this.actor }),
+      content: `<p>${content}</p>`
+    });
+  }
+
   activateListeners(html) {
     super.activateListeners(html);
 
+    const actor = this.document;
+
+    // Click sur les cases Vitalité/Tenacité
     html.find(".vitalite-tenacite .case").on("click", async (event) => {
       const index = Number(event.currentTarget.dataset.index);
       const actor = this.document;
@@ -65,6 +76,26 @@ class LamesCharacterSheet extends ActorSheet {
         "system.vitaliteTenacite": tableau
       });
 
+      this.render();
+    });
+
+    // 🩹 Soigner → transforme tous les "crossed" en "empty"
+    html.find(".btn-soigner").on("click", async () => {
+      const tableau = actor.system.vitaliteTenacite.map((c) =>
+          c === "crossed" ? "empty" : c
+      );
+      await actor.update({ "system.vitaliteTenacite": tableau });
+      this.sendChatMessage(`${actor.name} se soigne et récupère sa Vitalité.`);
+      this.render();
+    });
+
+    // 😴 Se reposer → transforme tous les "checked" en "empty"
+    html.find(".btn-reposer").on("click", async () => {
+      const tableau = actor.system.vitaliteTenacite.map((c) =>
+          c === "checked" ? "empty" : c
+      );
+      await actor.update({ "system.vitaliteTenacite": tableau });
+      this.sendChatMessage(`${actor.name} se repose et récupère sa Ténacité.`);
       this.render();
     });
   }
