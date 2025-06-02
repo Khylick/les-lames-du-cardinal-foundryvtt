@@ -12,3 +12,28 @@
 .les-lames .sheet-body {
   padding: 10px;
 }
+
+.vitalite-tenacite {
+  display: flex;
+  flex-direction: column-reverse; /* Du fort (bas) vers le faible (haut) */
+  align-items: center;
+  margin: 1em 0;
+}
+
+.vitalite-tenacite .case {
+  width: 32px;
+  height: 32px;
+  border: 2px solid black;
+  background-color: white;
+  margin: 4px 0;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.vitalite-tenacite .case.checked {
+  background: url("../assets/check.svg") center/contain no-repeat;
+}
+
+.vitalite-tenacite .case.crossed {
+  background: url("../assets/cross.svg") center/contain no-repeat;
+}

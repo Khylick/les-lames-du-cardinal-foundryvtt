@@ -1,12 +1,20 @@
 {
   "Actor": {
-    "types": ["character"],
+    "types": ["pj"],
     "templates": {
-      "character": "templates/actor/character-sheet.hbs"
+      "pj": "templates/actor/character-sheet.hbs"
     }
   },
   "Item": {
     "types": [],
     "templates": {}
+  },
+  "data": {
+    "pj": {
+      "vitaliteTenacite": [
+        "empty", "empty", "empty", "empty",
+        "empty", "empty", "empty", "empty"
+      ]
+    }
   }
 }

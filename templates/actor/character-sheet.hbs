@@ -1,9 +1,13 @@
 <form class="les-lames sheet actor" autocomplete="off">
-  <header class="sheet-header">
-    <h1><input name="name" type="text" value="{{actor.name}}" placeholder="Nom du personnage"/></h1>
-  </header>
-
-  <section class="sheet-body">
-    <p>Fiche de personnage à compléter…</p>
-  </section>
+    <header class="sheet-header">
+        <h1><input name="name" type="text" value="{{actor.name}}" placeholder="Nom du personnage"/></h1>
+    </header>
+    <section class="vitalite-tenacite">
+        {{#each system.vitaliteTenacite as |case index|}}
+            <div class="case {{case}}" data-index="{{index}}"></div>
+        {{/each}}
+    </section>
+    <section class="sheet-body">
+        <p>Fiche de personnage en cours de développement</p>
+    </section>
 </form>
