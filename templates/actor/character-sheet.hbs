@@ -1,15 +1,21 @@
 <form class="les-lames sheet actor" autocomplete="off">
-    <header class="sheet-header">
-        <h1><input name="name" type="text" value="{{actor.name}}" placeholder="Nom du personnage"/></h1>
-    </header>
+    <header class="sheet-header"></header>
     <section class="vitalite-controls">
-        <button type="button" class="btn-soigner">🩹 Soigner</button>
-        <button type="button" class="btn-reposer">😴 Se reposer</button>
+        <button type="button" class="btn-soigner">Se Soigner</button>
+        <button type="button" class="btn-reposer">Se reposer</button>
     </section>
     <section class="vitalite-tenacite">
-        {{#each system.vitaliteTenacite as |case index|}}
-            <div class="case {{case}}" data-index="{{index}}"></div>
-        {{/each}}
+        <div class="cases">
+            {{#each system.vitaliteTenacite as |case index|}}
+                <div class="case {{case}}" data-index="{{index}}"></div>
+            {{/each}}
+        </div>
+    </section>
+    <section class="infos-personnage">
+        <div class="form-field">
+            <label for="name">Nom</label>
+            <input name="name" type="text" value="{{actor.name}}" placeholder="Nom du personnage"/>
+        </div>
     </section>
     <section class="sheet-body">
         <p>Fiche de personnage en cours de développement</p>

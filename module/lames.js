@@ -29,8 +29,8 @@ class LamesCharacterSheet extends ActorSheet {
     return mergeObject(super.defaultOptions, {
       classes: ["les-lames", "sheet", "actor"],
       template: "systems/les-lames-du-cardinal/templates/actor/character-sheet.hbs",
-      width: 600,
-      height: 700,
+      width: 1200,
+      height: 900,
       tabs: [{ navSelector: ".sheet-tabs", contentSelector: ".sheet-body", initial: "description" }]
     });
   }
