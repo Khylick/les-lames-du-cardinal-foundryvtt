@@ -1,0 +1,14 @@
+.les-lames.sheet.actor {
+  font-family: "Garamond", serif;
+}
+
+.les-lames .sheet-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #000;
+}
+
+.les-lames .sheet-body {
+  padding: 10px;
+}

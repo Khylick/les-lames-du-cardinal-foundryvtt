@@ -1,0 +1,12 @@
+{
+  "Actor": {
+    "types": ["character"],
+    "templates": {
+      "character": "templates/actor/character-sheet.hbs"
+    }
+  },
+  "Item": {
+    "types": [],
+    "templates": {}
+  }
+}
