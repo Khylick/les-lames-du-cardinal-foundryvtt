@@ -18,19 +18,35 @@
 }
 
 .vitalite-tenacite {
-  align-items: center;
-  background: url("../assets/bg-vitalite-tenacite.png") center/contain no-repeat transparent;
   display: flex;
-  flex-direction: column-reverse; /* Du fort (bas) vers le faible (haut) */
-  height: 445px;
+  flex-direction: column;
+  height: 500px;
   margin: 1em 0;
   position: relative;
-  width: 120px;
+  width: 185px;  
+}
+.vitalite-tenacite-controls {
+  display: flex;
+}
+.btn-soigner, .btn-reposer {
+  background-color: #4a6a6b;
+  border: 2px solid #1c2828;  
+  border-radius: 0;
+  color: #FFF;
+  font-size: 1em;
+}
+.bg-vitalite-tenacite {
+  background: url("../assets/bg-vitalite-tenacite.png") 0 / contain no-repeat transparent;
+  display: flex;
+  flex-direction: column-reverse; /* Du fort (bas) vers le faible (haut) */
+  margin: 10px;
+  height: 100%;
 }
 
 .vitalite-tenacite .cases {
   position: absolute;
-  top: 115px;
+  top: 150px;
+  left: 56px;
 }
 
 .vitalite-tenacite .case {

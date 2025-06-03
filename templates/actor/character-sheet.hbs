@@ -1,22 +1,45 @@
 <form class="les-lames sheet actor" autocomplete="off">
     <header class="sheet-header"></header>
-    <section class="vitalite-controls">
-        <button type="button" class="btn-soigner">Se Soigner</button>
-        <button type="button" class="btn-reposer">Se reposer</button>
+
+    <section class="block-fiche">
+        <section class="vitalite-tenacite">
+            <div class="vitalite-tenacite-controls">
+                <button type="button" class="btn-soigner">Se Soigner</button>
+                <button type="button" class="btn-reposer">Se reposer</button>
+            </div>
+            <div class="bg-vitalite-tenacite">
+                <div class="cases">
+                    {{#each system.vitaliteTenacite as |case index|}}
+                        <div class="case {{case}}" data-index="{{index}}"></div>
+                    {{/each}}
+                </div>
+            </div>
+        </section>
+
+        <section class="caracteristiques">
+            <div class="caracteristique puissance">
+                <div class="caracteristique-header">
+                    <h3 class="caracteristique-title">Puissance</h3>
+                    <div class="caracteristique-image"></div>
+                    <div class="caracteristique-value">
+                        
+                    </div>                        
+                </div>
+                <div class="block-competences">
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="infos-personnage">
+            <div class="form-field">
+                <label for="name">Nom</label>
+                <input name="name" type="text" value="{{actor.name}}" placeholder="Nom du personnage"/>
+            </div>
+        </section>
     </section>
-    <section class="vitalite-tenacite">
-        <div class="cases">
-            {{#each system.vitaliteTenacite as |case index|}}
-                <div class="case {{case}}" data-index="{{index}}"></div>
-            {{/each}}
-        </div>
-    </section>
-    <section class="infos-personnage">
-        <div class="form-field">
-            <label for="name">Nom</label>
-            <input name="name" type="text" value="{{actor.name}}" placeholder="Nom du personnage"/>
-        </div>
-    </section>
+    
     <section class="sheet-body">
         <p>Fiche de personnage en cours de développement</p>
     </section>
