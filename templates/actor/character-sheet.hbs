@@ -16,6 +16,24 @@
             </div>
         </section>
 
+        <section class="profils-wrapper">
+            <button type="button" class="toggle-profils">Voir les profils disponibles</button>
+
+            <div class="profil-liste" style="display:none;">
+                {{#each profils as |profil key|}}
+                    {{> "partials/profil-card"
+                        key=key
+                        nom=profil.nom
+                        variations=profil.variations
+                        illustration=profil.illustration
+                        description=profil.description
+                        competences=profil.competences
+                        iconCategorie=profil.iconCategorie
+                    }}
+                {{/each}}
+            </div>
+        </section>
+
         <section class="caracteristiques">
             <div class="caracteristique puissance">
                 <div class="caracteristique-header">

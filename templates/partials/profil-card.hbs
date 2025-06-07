@@ -1,0 +1,36 @@
+<div class="profil-carte-container" data-key="{{key}}">
+    <div class="profil-carte {{#if flipped}}flipped{{/if}}" data-key="{{key}}">
+        <!-- RECTO -->
+        <div class="face recto">
+            <h3 class="profil-nom">{{nom}}</h3>
+            {{#if variations}}
+                <ul class="profil-variations">
+                    {{#each variations}}
+                        <li>{{this}}</li>
+                    {{/each}}
+                </ul>
+            {{/if}}
+            <img src="{{illustration}}" alt="{{nom}}" class="profil-image" />
+            <div class="bandeau-profil">Profil</div>
+            <button type="button" class="choisir-profil" data-type="principal" data-key="{{key}}">Choisir comme principal</button>
+            <button type="button" class="choisir-profil" data-type="secondaire" data-key="{{key}}">Choisir comme secondaire</button>
+        </div>
+
+        <!-- VERSO -->
+        <div class="face verso">
+            <div class="profil-header">
+                <img src="{{iconCategorie}}" alt="{{categorie}}" class="profil-icone" />
+                <h3>{{nom}}</h3>
+                <img src="{{iconCategorie}}" alt="{{categorie}}" class="profil-icone" />
+            </div>
+
+            <p class="profil-description">{{description}}</p>
+
+            <ul class="profil-competences">
+                {{#each competences as |valeur nom|}}
+                    <li><strong>{{nom}} :</strong> {{valeur}}</li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>

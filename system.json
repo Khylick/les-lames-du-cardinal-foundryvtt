@@ -7,7 +7,7 @@
         "minimum": "11",
         "verified": "13"
     },
-    "scripts": ["module/lames.js"],
+    "scripts": [],
     "styles": ["styles/lames.css"],
     "languages": [
         {
@@ -17,7 +17,7 @@
         }
     ],
     "packs": [],
-    "esmodules": [],
+    "esmodules": ["module/main.js"],
     "socket": false,
     "initiative": "1d10",
     "grid": {

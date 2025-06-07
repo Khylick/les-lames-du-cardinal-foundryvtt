@@ -2,10 +2,10 @@ export const PROFILS = {
     artisan: {
         nom: "Artisan",
         variations: ["Compagnon", "Maître artisan", "Ouvrière"],
-        illustration: "../../assets/illustrations/profils/artisan.jpg",
+        illustration: "systems/les-lames-du-cardinal/assets/illustrations/profils/artisan.jpg",
         description: "Mâitre en matière de fabrication d'objets, il excelle non seulement dans sa spécialité, mais également dans tout ce qui touche aux mécanismes et à la technique. Il saura en toute occasion réparer et improviser.",
         categorie: "roturier",
-        iconCategorie: "../../assets/icons/categories/roturier.png",
+        iconCategorie: "systems/les-lames-du-cardinal/assets/icons/categories/roturier.png",
         competences: {
           athletisme: 1,
           autorite: 2,
@@ -35,10 +35,10 @@ export const PROFILS = {
     artiste: {
         nom: "Artiste",
         variations: ["Musicienne", "Peintre", "Sculpteur"],
-        illustration: "../../assets/illustrations/profils/artiste.jpg",
+        illustration: "systems/les-lames-du-cardinal/assets/illustrations/profils/artiste.jpg",
         description: "Inspiré et subtil, il brille par ses créations artistiques abouties, mais se distingue aussi par sa capacité à faire preuve d'une inventivité sans pareille.",
         categorie: "lettre",
-        iconCategorie: "../../assets/icons/categories/lettre.png",
+        iconCategorie: "systems/les-lames-du-cardinal/assets/icons/categories/lettre.png",
         competences: {
             athletisme: 1,
             autorite: 1,
@@ -68,10 +68,10 @@ export const PROFILS = {
     aventurier: {
         nom: "Aventurier",
         variations: ["Assassin", "Contrebandière", "Filou"],
-        illustration: "../../assets/illustrations/profils/aventurier.jpg",
+        illustration: "systems/les-lames-du-cardinal/assets/illustrations/profils/aventurier.jpg",
         description: "Liberté et hardiesse sont les maîtres mots de son existence, qu'il passe à tromper la surveillance des autorités. Celles-ci le traquent et enragent de le voir constamment leur échapper.",
         categories: "combattant",
-        iconCategorie: "../../assets/icons/categories/combattant.png",
+        iconCategorie: "systems/les-lames-du-cardinal/assets/icons/categories/combattant.png",
         competences: {
             athletisme: 3,
             autorite: 1,
@@ -101,10 +101,10 @@ export const PROFILS = {
     cavalier: {
         nom: "Cavalier",
         variations: ["Hussard", "Messagère", "Vyvernière"],
-        illustration: "../../assets/illustrations/profils/cavalier.jpg",
+        illustration: "systems/les-lames-du-cardinal/assets/illustrations/profils/cavalier.jpg",
         description: "Le mouvement est son domaine, et nul mieux que lui ne sait mener monture à travers les plaines, le ciel ou les monts, à travers les balles de mousquet comme sous une pluie battante.",
         categorie: "combattant",
-        iconCategorie: "../../assets/icons/categories/combattant.png",
+        iconCategorie: "systems/les-lames-du-cardinal/assets/icons/categories/combattant.png",
         competences: {
             athletisme: 3,
             autorite: 2,
@@ -134,10 +134,10 @@ export const PROFILS = {
     commercant: {
         nom: "Commercant",
         variations: ["Boutiquier", "Négociante", "Trafiquant"],
-        illustration: "../../assets/illustrations/profils/commercant.jpg",
+        illustration: "systems/les-lames-du-cardinal/assets/illustrations/profils/commercant.jpg",
         description: "La vie est un grand marché dont il connaît les allées mieux que quiconque. Prenez garde, car bien que parfaitement honnête, il saura, autant qu'un coupe-bourse, vous soulager à l'occasion de vos deniers.",
         categorie: "roturier",
-        iconCategorie: "../../assets/icons/categories/roturier.png",
+        iconCategorie: "systems/les-lames-du-cardinal/assets/icons/categories/roturier.png",
         competences: {
             athletisme: 1,
             autorite: 2,
@@ -167,10 +167,10 @@ export const PROFILS = {
     conseiller: {
         nom: "Conseiller",
         variations: ["Avocat", "Intendante", "Magistrat"],
-        illustration: "../../assets/illustrations/profils/conseiller.jpg",
+        illustration: "systems/les-lames-du-cardinal/assets/illustrations/profils/conseiller.jpg",
         description: "Son éloquence n'a d'égale que sa capacité d'écoute. Il manoeuvre dans les cours comme un capitaine dans la tempête, afin d'arriver toujours à bon port. Il avancera contre vents marées.",
         categorie: "lettre",
-        iconCategorie: "../../assets/icons/categories/lettre.png",
+        iconCategorie: "systems/les-lames-du-cardinal/assets/icons/categories/lettre.png",
         competences: {
             athletisme: 1,
             autorite: 2,
@@ -200,10 +200,10 @@ export const PROFILS = {
     courtisan: {
         nom: "Courtisan",
         variations: ["Dame", "Flagorneur", "Intrigante"],
-        illustration: "../../assets/illustrations/profils/courtisan.jpg",
+        illustration: "systems/les-lames-du-cardinal/assets/illustrations/profils/courtisan.jpg",
         description: "Certains le disent parasite, mais il ne fait qu'exploiter les vides de l'existence, jouant de son visage ou de son corps comme un grand musicien de son instrument. Il est des portes que seul le charme peut forcer.",
         categorie: "courtisan",
-        iconCategorie: "../../assets/icons/categories/courtisan.png",
+        iconCategorie: "systems/les-lames-du-cardinal/assets/icons/categories/courtisan.png",
         competences: {
             athletisme: 1,
             autorite: 3,
@@ -233,10 +233,10 @@ export const PROFILS = {
     diplomate: {
         nom: "Diplomate",
         variations: ["Ambassadeur", "Expatriée politique", "Parlementaire"],
-        illustration: "../../assets/illustrations/profils/diplomate.jpg",
+        illustration: "systems/les-lames-du-cardinal/assets/illustrations/profils/diplomate.jpg",
         description: "La politique est une affaire de spécialistes. Certains, pourtant, y font office de référence, même parmi les plus grands intrigants. Soyons sûrs qu'il saura s'extraire de situations compromises.",
         categorie: "lettre",
-        iconCategorie: "../../assets/icons/categories/lettre.png",
+        iconCategorie: "systems/les-lames-du-cardinal/assets/icons/categories/lettre.png",
         competences: {
             athletisme: 1,
             autorite: 3,
@@ -266,10 +266,10 @@ export const PROFILS = {
     erudit: {
         nom: "Erudit",
         variations: ["Libelliste", "Libraire", "Philosophe"],
-        illustration: "../../assets/illustrations/profils/erudit.jpg",
+        illustration: "systems/les-lames-du-cardinal/assets/illustrations/profils/erudit.jpg",
         description: "Peu nombreux sont ceux qui maîtrisent les lettres. Il sait le faire avec raison et pragmatisme, ce qui pourrait l'amener à compter parmi les grands esprits de son temps. Son érudition est une arme aussi efficace qu'une épée.",
         categorie: "lettre",
-        iconCategorie: "../../assets/icons/categories/erudit.png",
+        iconCategorie: "systems/les-lames-du-cardinal/assets/icons/categories/lettre.png",
         competences: {
             athletisme: 1,
             autorite: 1,
@@ -299,10 +299,10 @@ export const PROFILS = {
     espion: {
         nom: "Espion",
         variations: ["Agent double", "Agent secret", "Conspiratrice"],
-        illustration: "../../assets/illustrations/profils/espion.jpg",
+        illustration: "systems/les-lames-du-cardinal/assets/illustrations/profils/espion.jpg",
         description: "Il sait si bien dissimuler ses allégeances qu'il m'a été longtemps difficile de lui faire entièrement confiance. Mais il saura mieux que quiconque procurer des informations sur nos ennemis. Vraies ou fausses.",
         categorie: "roturier",
-        iconCategorie: "../../assets/icons/categories/roturier.png",
+        iconCategorie: "systems/les-lames-du-cardinal/assets/icons/categories/roturier.png",
         competences: {
             athletisme: 1,
             autorite: 0,
@@ -332,10 +332,10 @@ export const PROFILS = {
     finelame: {
         nom: "Fine lame",
         variations: ["Bretteuse", "Maître d'armes", "Spadassin"],
-        illustration: "../../assets/illustrations/profils/finelame.jpg",
+        illustration: "systems/les-lames-du-cardinal/assets/illustrations/profils/finelame.jpg",
         description: "Vivre de sa lame ne se conçoit pas qu'au sein d'une troupe militaire. La science de l'escrime peut se monnayer de bien d'autres façons, certaines moins glorieuses que d'autres... Ses tarifs témoignent de sa compétence.",
         categorie: "combattant",
-        iconCategorie: "../../assets/icons/categories/combattant.png",
+        iconCategorie: "systems/les-lames-du-cardinal/assets/icons/categories/combattant.png",
         competences: {
             athletisme: 3,
             autorite: 1,
@@ -365,10 +365,10 @@ export const PROFILS = {
     forban: {
         nom: "Forban",
         variations: ["Brigand", "Corsaire", "Monte-en-l'air"],
-        illustration: "../../assets/illustrations/profils/forban.jpg",
+        illustration: "systems/les-lames-du-cardinal/assets/illustrations/profils/forban.jpg",
         description: "Tromper et vivre aux dépens d'autrui, que ce soit sur la terre ferme ou sur la mer, ne lui pose aucun problème de conscience. Tout cela ne saurait aller sans s'accompagner d'une certaine flamboyance, qu'il conviendra de canaliser.",
         categorie: "combattant",
-        iconCategorie: "../../assets/icons/categories/combattant.png",
+        iconCategorie: "systems/les-lames-du-cardinal/assets/icons/categories/combattant.png",
         competences: {
             athletisme: 3,
             autorite: 0,
@@ -398,10 +398,10 @@ export const PROFILS = {
     libertin: {
         nom: "Libertin",
         variations: ["Galante", "Joueur", "Mondaine"],
-        illustration: "../../assets/illustrations/profils/libertin.jpg",
+        illustration: "systems/les-lames-du-cardinal/assets/illustrations/profils/libertin.jpg",
         description: "La nuit ne l'effraie pas, bien au contraire. Il sait s'y perdre et goûter ses plaisirs, s'adonner à ses vices et en sortir grandi. Et vivant. Comment nier l'utilité d'un tel personnage ?",
         categorie: "courtisan",
-        iconCategorie: "../../assets/icons/categories/courtisan.png",
+        iconCategorie: "systems/les-lames-du-cardinal/assets/icons/categories/courtisan.png",
         competences: {
             athletisme: 1,
             autorite: 0,
@@ -431,10 +431,10 @@ export const PROFILS = {
     medecin: {
         nom: "Médecin",
         variations: ["Barbier-chirurgien", "Docteur", "Sage-femme"],
-        illustration: "../../assets/illustrations/profils/medecin.jpg",
+        illustration: "systems/les-lames-du-cardinal/assets/illustrations/profils/medecin.jpg",
         description: "La médecine est toute affaire d'humeurs, mais il sait aller au-delà des pratiques ataviques pour ouvrir une ère de modernité que d'aucuns pourraient qualifier d'hérétique. Pas nous.",
         categorie: "lettre",
-        iconCategorie: "../../assets/icons/categories/lettre.png",
+        iconCategorie: "systems/les-lames-du-cardinal/assets/icons/categories/lettre.png",
         competences: {
             athletisme: 1,
             autorite: 2,
@@ -464,10 +464,10 @@ export const PROFILS = {
     mousquetaire: {
         nom: "Mousquetaire",
         variations: ["Garde du Cardinal", "Garde dalmate", "Garde suisse"],
-        illustration: "../../assets/illustrations/profils/mousquetaire.jpg",
+        illustration: "systems/les-lames-du-cardinal/assets/illustrations/profils/mousquetaire.jpg",
         description: "Il est de ceux qui jouissent du prestige des corps de gardes d'élite. Habile tant à l'épée qu'au mousquet, il se signale dans son régiment comme un élément d'excellence que beaucoup admirent, que certains jalousent.",
         categorie: "combattant",
-        iconCategorie: "../../assets/icons/categories/combattant.png",
+        iconCategorie: "systems/les-lames-du-cardinal/assets/icons/categories/combattant.png",
         competences: {
             athletisme: 3,
             autorite: 1,
@@ -497,10 +497,10 @@ export const PROFILS = {
     noble: {
         nom: "Noble",
         variations: ["Baronne", "Chevalier", "Gentilhomme"],
-        illustration: "../../assets/illustrations/profils/noble.jpg",
+        illustration: "systems/les-lames-du-cardinal/assets/illustrations/profils/noble.jpg",
         description: "Il est né sang bleu, mais n'en tire pas forcément une fierté démesurée. Qu'importe. Que ce soit depuis un manoir décrépi dans les confins les plus reculés de France, ou dans un hôtel parisien luxueux, il reste de ceux qui dominent et dont la voix peut se faire entendre à la cour.",
         categorie: "roturier",
-        iconCategorie: "../../assets/icons/categories/roturier.png",
+        iconCategorie: "systems/les-lames-du-cardinal/assets/icons/categories/roturier.png",
         competences: {
             athletisme: 1,
             autorite: 4,
@@ -530,10 +530,10 @@ export const PROFILS = {
     officier: {
         nom: "Officier",
         variations: ["Commissaire", "Enseigne", "Lieutenant"],
-        illustration: "../../assets/illustrations/profils/commissaire.jpg",
+        illustration: "systems/les-lames-du-cardinal/assets/illustrations/profils/officier.jpg",
         description: "Il possède l'expérience de l'homme de troupe, mais on observe aussi chez lui les qualités nécessaires pour diriger et commander. Ses hommes le respectent, le craignent, l'adulent ou le haïssent. Avant tout, ils ne sauraient discuter ses ordres. Un relais de choix.",
         categorie: "combattant",
-        iconCategorie: "../../assets/icons/categories/combattant.png",
+        iconCategorie: "systems/les-lames-du-cardinal/assets/icons/categories/combattant.png",
         competences: {
             athletisme: 2,
             autorite: 3,
@@ -563,10 +563,10 @@ export const PROFILS = {
     religieux: {
         nom: "Religieux",
         variations: ["Moniale", "Prêtre", "Théologien"],
-        illustration: "../../assets/illustrations/profils/religieux.jpg",
+        illustration: "systems/les-lames-du-cardinal/assets/illustrations/profils/religieux.jpg",
         description: "Les voies divines sont tortueuses et encombrées de figures draconiques qui amènent doutes et remises en question. Il voue sa vie à Dieu, tel un soldat divin, prêt à en découdre avec les démons ailés.",
         categorie: "lettre",
-        iconCategorie: "../../assets/icons/categories/lettre.png",
+        iconCategorie: "systems/les-lames-du-cardinal/assets/icons/categories/lettre.png",
         competences: {
             athletisme: 1,
             autorite: 3,
@@ -596,10 +596,10 @@ export const PROFILS = {
     saltimbanque: {
         nom: "Saltimbanque",
         variations: ["Acrobate", "Comédienne", "Dresseur"],
-        illustration: "../../assets/illustrations/profils/saltimbanque.jpg",
+        illustration: "systems/les-lames-du-cardinal/assets/illustrations/profils/saltimbanque.jpg",
         description: "Il parcourt rues et chemins avec la même aisance, et régale les foules de ses improvisations exceptionnelles. Un instant, il attire l'oeil mieux que quiconque. Le suivant, il se fond dans la foule, redevient anonyme et reprend son chemin.",
         categorie: "roturier",
-        iconCategorie: "../../assets/icons/categories/roturier.png",
+        iconCategorie: "systems/les-lames-du-cardinal/assets/icons/categories/roturier.png",
         competences: {
             athletisme: 4,
             autorite: 0,
@@ -629,10 +629,10 @@ export const PROFILS = {
     savant: {
         nom: "Savant",
         variations: ["Astronome", "Mathématicien", "Scientifique"],
-        illustration: "../../assets/illustrations/profils/savant.jpg",
+        illustration: "systems/les-lames-du-cardinal/assets/illustrations/profils/savant.jpg",
         description: "Il marche sur le fil de la science comme un funambule, ne cessant d'échafauder des théories révolutionnaires et d'expérimenter de nouveaux procédés. Parfois abscons, on le dit génial, mais inquiétant.",
         categorie: "lettre",
-        iconCategorie: "../../assets/icons/categories/savant.jpg",
+        iconCategorie: "systems/les-lames-du-cardinal/assets/icons/categories/lettre.png",
         competences: {
             athletisme: 1,
             autorite: 2,
@@ -662,10 +662,10 @@ export const PROFILS = {
     soldat: {
         nom: "Soldat",
         variations: ["Arquebusier", "Milicienne", "Soudard"],
-        illustration: "../../assets/illustrations/profils/soldat.jpg",
+        illustration: "systems/les-lames-du-cardinal/assets/illustrations/profils/soldat.jpg",
         description: "Le champ de bataille est le seul qu'il arpente, avec courage et discipline. Mieux que tout autre chose, il sait avancer et survivre, en particulier grâce à une bonne dose d'improvisation.",
         categorie: "combattant",
-        iconCategorie: "../../assets/icons/categories/combattant.png",
+        iconCategorie: "systems/les-lames-du-cardinal/assets/icons/categories/combattant.png",
         competences: {
             athletisme: 3,
             autorite: 1,
@@ -695,10 +695,10 @@ export const PROFILS = {
     valet: {
         nom: "Valet",
         variations: ["Domestique", "Drôlesse", "Ecuyer"],
-        illustration: "../../assets/illustrations/profils/valet.jpg",
+        illustration: "systems/les-lames-du-cardinal/assets/illustrations/profils/valet.jpg",
         description: "Il peut sembler peu glorieux de mener une vie ancillaire, mais il sait s'en accomoder en profitant grandement des largesses de son mâitre. Malin, il met en oeuvre nombre de subterfuges pour mener à bien ses menues missions",
         categorie: "roturier",
-        iconCategorie: "../../assets/icons/categories/roturier.png",
+        iconCategorie: "systems/les-lames-du-cardinal/assets/icons/categories/roturier.png",
         competences: {
             athletisme: 3,
             autorite: 0,
