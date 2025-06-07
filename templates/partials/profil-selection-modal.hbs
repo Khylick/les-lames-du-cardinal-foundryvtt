@@ -1,0 +1,13 @@
+<div class="profil-liste">
+    {{#each profils as |profil key|}}
+        {{> "partials/profil-card"
+            key=key
+            nom=profil.nom
+            variations=profil.variations
+            illustration=profil.illustration
+            description=profil.description
+            competences=profil.competences
+            iconCategorie=profil.iconCategorie
+        }}
+    {{/each}}
+</div>

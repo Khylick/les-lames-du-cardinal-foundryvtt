@@ -80,19 +80,42 @@ export class LamesCharacterSheet extends ActorSheet {
         });
 
         // Action d'affichage des profils
-        html.find(".toggle-profils").on("click", function () {
-            const list = html.find(".profil-liste");
-            const visible = list.is(":visible");
-            list.toggle(!visible);
+        html.find(".toggle-profils").on("click", async () => {
+            const content = await renderTemplate("systems/les-lames-du-cardinal/templates/partials/profil-selection-modal.hbs", {
+                profils: PROFILS
+            });
 
-            $(this).text(visible ? "Voir les profils disponibles" : "Masquer les profils");
-        });
+            new Dialog({
+                title: "Sélection de vos profils",
+                content: content,
+                buttons: {
+                    close: {
+                        label: "Fermer"
+                    }
+                },
+                render: (html) => {
+                    html.find(".profil-carte").on("click", function (event) {
+                        if (event.target.classList.contains("choisir-profil")) return;
+                        $(this).toggleClass("flipped");
+                    });
 
-        // Action de passage recto verso des cartes profils
-        html.find(".profil-carte").on("click", function (event) {
-            // Empêche que le clic sur les boutons à l'intérieur retourne la carte
-            if(event.target.classList.contains("choisir-profil")) return;
-            $(this).toggleClass("flipped");
+                    html.find(".choisir-profil").on("click", async function () {
+                       const key = $(this).closest(".profil-carte-container").data("key");
+                       const actor = game.actors.get(html.data("actorId"));
+                       const current = actor.system.profilsChoisis || [];
+
+                       if (current.length >= 2) {
+                           ui.notification.warn("Deux profils sont déjà sélectionnés.");
+                           return;
+                       }
+
+                       current.push(PROFILS[key]);
+
+                       await actor.update({ "system.profilsChoisis": current });
+                       actor.sheet.render(true);
+                    });
+                }
+            }).render(true);
         });
     }
 }

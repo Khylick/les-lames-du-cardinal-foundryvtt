@@ -13,9 +13,9 @@ Hooks.once("init", async function () {
     });
 
     // Charger le contenu du fichier et l'enregistrer sous un nom court
-    const template = await fetch("systems/les-lames-du-cardinal/templates/partials/profil-card.hbs")
-        .then(r => r.text());
+    const profilCard = await fetch("systems/les-lames-du-cardinal/templates/partials/profil-card.hbs").then(r => r.text());
+    const modal = await fetch("systems/les-lames-du-cardinal/templates/partials/profil-selection-modal.hbs").then(r => r.text());
 
-    Handlebars.registerPartial("partials/profil-card", template);
-    console.log("✔️ Partial 'partials/profil-card' enregistré manuellement.");
+    Handlebars.registerPartial("partials/profil-card", profilCard);
+    Handlebars.registerPartial("profil-selection-modal", modal);
 });

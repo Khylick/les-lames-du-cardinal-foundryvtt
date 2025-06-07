@@ -1,7 +1,7 @@
 <form class="les-lames sheet actor" autocomplete="off">
     <header class="sheet-header"></header>
 
-    <section class="block-fiche">
+    <section class="block-fiche block-fiche-1">
         <section class="vitalite-tenacite">
             <div class="vitalite-tenacite-controls">
                 <button type="button" class="btn-soigner">Se Soigner</button>
@@ -16,49 +16,34 @@
             </div>
         </section>
 
-        <section class="profils-wrapper">
-            <button type="button" class="toggle-profils">Voir les profils disponibles</button>
-
-            <div class="profil-liste" style="display:none;">
-                {{#each profils as |profil key|}}
-                    {{> "partials/profil-card"
-                        key=key
-                        nom=profil.nom
-                        variations=profil.variations
-                        illustration=profil.illustration
-                        description=profil.description
-                        competences=profil.competences
-                        iconCategorie=profil.iconCategorie
-                    }}
-                {{/each}}
-            </div>
-        </section>
-
-        <section class="caracteristiques">
-            <div class="caracteristique puissance">
-                <div class="caracteristique-header">
-                    <h3 class="caracteristique-title">Puissance</h3>
-                    <div class="caracteristique-image"></div>
-                    <div class="caracteristique-value">
-                        
-                    </div>                        
+        <section class="block-fiche-2">
+            <div class="informations d-flex flex-nowrap">
+                <div class="form-field w-50 mr-1">
+                    <label class="tt-uppercase d-block ta-left color-dark-red fw-bold" for="system.occultisme">Occultisme</label>
+                    <input type="text" name="system.occultisme" value="{{system.occultisme}}" />
                 </div>
-                <div class="block-competences">
+                <div class="form-field w-50">
+                    <label class="tt-uppercase d-block ta-right color-dark-red fw-bold" for="system.armes">Armes</label>
+                    <input type="text" name="system.armes" value="{{system.armes}}" />
+                </div>
+            </div>
 
+            <div class="identite">
+                <button type="button" class="toggle-profils">Voir les profils disponibles</button>
+                <div class="profil-select">
+                    <strong>Profil :</strong> {{system.profilsChoisis.0.nom}}
+                </div>
+                <div class="profil-select">
+                    <strong>Profil :</strong> {{system.profilsChoisis.1.nom}}
                 </div>
             </div>
         </section>
 
-
-        <section class="infos-personnage">
+        <!--<section class="infos-personnage">
             <div class="form-field">
                 <label for="name">Nom</label>
                 <input name="name" type="text" value="{{actor.name}}" placeholder="Nom du personnage"/>
             </div>
-        </section>
-    </section>
-    
-    <section class="sheet-body">
-        <p>Fiche de personnage en cours de développement</p>
+        </section>-->
     </section>
 </form>
