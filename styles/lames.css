@@ -3,13 +3,21 @@
 .d-flex   { display: flex;  }
 .flex-nowrap { flex-wrap: nowrap; }
 
+.jc-space-between { justify-content: space-between; }
+
 /* WIDTH */
 .w-50 { width: 50%; }
 
 /* MARGIN & PADDING */
+.mt-07 { margin-top: .7em; }
+
 .mr-1 { margin-right: 1em; }
 
+.mb-025 { margin-bottom: 0.25em; }
+
 /* FONT */
+.fs-13 { font-size: 1.3em; }
+
 .tt-uppercase { text-transform: uppercase; }
 
 .ta-left  { text-align: left;   }
@@ -17,9 +25,20 @@
 
 .fw-bold { font-weight: bold; }
 
-
 /* COLOR */
 .color-dark-red { color: #662318; }
+
+/* BORDER */
+.no-border { border: none; }
+.no-radius { border-radius: 0; }
+
+.bb-1-dotted { border-bottom: 1px dotted; }
+.b-color-dark-red { border-color: #662318; }
+
+/* OTHER */
+.no-background { background: none; }
+.no-box-shadow { box-shadow: none; }
+
 
 .les-lames.sheet.actor {
   font-family: "Garamond", serif;
@@ -129,8 +148,8 @@
 }
 
 .profil-carte {
-  width: 100px;
-  height: 200px;
+  width: 300px;
+  height: 410px;
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.8s ease;
@@ -169,21 +188,49 @@
   text-align: center;
   font-size: 0.8em;
   margin-bottom: 6px;
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  bottom: 50px;
+  border-radius: 20px;
 }
 
 .profil-image {
-  width: 100%;
-  height: 120px;
+  width: 250px;
+  height: 290px;
   object-fit: cover;
-  border-radius: 4px;
-  margin-bottom: 6px;
+  border-radius: 8px;
+  margin: 0 auto;
+  border: 10px solid #CCC;
+}
+
+.profil-nom {
+  text-align: center;
+  border-bottom: none;
 }
 
 .profil-variations {
+  display: flex;
+  justify-content: center;
   font-size: 0.85em;
   list-style: none;
   padding-left: 0;
   margin: 6px 0;
+}
+.profil-variations li { font-style: italic; }
+.profil-variations li::after {
+  display: inline-block;
+  content: "-";
+  margin: 0 0.5em;
+}
+.profil-variations li:last-child::after {
+  content: "";
+}
+
+.choisir-profil {
+  font-size: 0.8em;
+  font-weight: bold;
+  line-height: 20px;
 }
 
 .profil-competences {
@@ -191,11 +238,23 @@
   list-style: none;
   padding-left: 0;
   margin-top: 10px;
+  width: 50%;
+}
+
+.profil-competences li {
+  font-size: 1em;
+  border-bottom: 1px dotted;
+  margin-bottom: 0.08em;
+}
+
+.profil-competences li strong {
+  text-transform: capitalize;
 }
 
 .profil-description {
-  font-size: 0.9em;
-  margin: 6px 0;
+  font-size: 1em;
+  margin: 10px 10px 0 0;
+  width: 50%;
 }
 
 .profil-header {

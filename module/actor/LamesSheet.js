@@ -115,6 +115,10 @@ export class LamesCharacterSheet extends ActorSheet {
                        actor.sheet.render(true);
                     });
                 }
+            }, {
+                width: 1350,
+                height: 1100,
+                resizable: true,
             }).render(true);
         });
     }
